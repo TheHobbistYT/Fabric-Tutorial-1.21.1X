@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "tutorialmod",
+	"description": "Maybe this mod will make me cool... yeah no definitely not",
+	"authors": [
+		"TheHobbistYT"
+	],
+	"contact": {
+		"homepage": "https://hobby.net/",
+		"sources": "https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.21.1X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hobby.tutorialmod.Tutorialmod"
+		],
+		"fabric-datagen": [
+			"net.hobby.tutorialmod.TutorialmodDataGenerator"
+		],
+		"client": [
+			"net.hobby.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
